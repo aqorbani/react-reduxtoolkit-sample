@@ -1,7 +1,8 @@
-const Counter = () => {
-  return (
-    <div>Counter</div>
-  )
-}
+import { useSelector } from "react-redux";
 
-export default Counter
+const Counter = () => {
+  const counter = useSelector((store) => store.counter.counterValue);
+  return <div>{counter}</div>;
+};
+
+export default Counter;
