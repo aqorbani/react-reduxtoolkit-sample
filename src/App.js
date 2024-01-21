@@ -6,7 +6,9 @@ function App() {
   return (
     <div>
       <Counter />
+      <hr />
       <Number />
+      <hr />
       <Users />
     </div>
   );
